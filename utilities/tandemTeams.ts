@@ -6,6 +6,21 @@ class TandemTeams {
     _blueShirtSpeeds: number[]
 
     constructor(pRedShirtSpeeds: number[], pBlueShirtSpeeds: number[]) {
+        if (pRedShirtSpeeds.length != pBlueShirtSpeeds.length) {
+            throw "The arrays must have the same length"
+        }
+
+        const isAllIntegerRedShirt = pRedShirtSpeeds.every((item) => Number.isInteger(item) && item >= 0);
+        const isAllIntegerBlueShirt = pBlueShirtSpeeds.every((item) => Number.isInteger(item) && item >= 0);
+
+        if (!isAllIntegerRedShirt) {
+            throw "All values of the red shirt teams must be integer and positives";
+        }
+
+        if (!isAllIntegerBlueShirt) {
+            throw "All values of the blue shirt teams must be integer and positives";
+        }
+
         this._redShirtSpeeds = pRedShirtSpeeds;
         this._blueShirtSpeeds = pBlueShirtSpeeds;
     }
@@ -14,6 +29,7 @@ class TandemTeams {
     private tandemSpeed = (speedA: number, speedB: number): number => (speedA > speedB) ? speedA : speedB;
 
     calculateExtremeValues(fastest: boolean): number {
+
         let tempRedShirt: number[] = [];
         let tempBlueShirt: number[] = [];
 
