@@ -1,5 +1,5 @@
 
-import { sortNumericArrays } from '../utilities/sortUtilities';
+import { sortNumericArrays } from './sortUtilities';
 
 class TandemTeams {
     _redShirtSpeeds: number[]
