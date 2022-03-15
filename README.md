@@ -1,4 +1,4 @@
-# installation instructions
+# Installation instructions
 
 The first thing to do is to install the necessary packages and dependencies. To perform this task, the following command must be executed:
 
