@@ -12,9 +12,7 @@ const tandemTeamsObject: TandemTeams = new TandemTeams(redShirtTeam, blueShirtTe
 const result: number = tandemTeamsObject.calculateExtremeValues();
 
 //print the result
-console.log("//--------------- Result -----------------");
 console.log(result);
-console.log("----------------- End -------------------");
 
 
 
