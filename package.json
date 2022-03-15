@@ -1,0 +1,16 @@
+{
+  "name": "exercise-1-team-bicycle-riding",
+  "version": "1.0.0",
+  "description": "Answer exercise-1-bicycle-riding",
+  "main": "app.ts",
+  "scripts": {
+    "test": "test",
+    "dev": "npx ts-node app.ts"
+  },
+  "author": "Rafael Bomate",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "@types/node": "^17.0.21"
+  }
+}
