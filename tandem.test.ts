@@ -6,7 +6,7 @@ describe("Tandem tests", () => {
 
     it('Creating an instance of TandemTeams class', () => {
 
-        const tandemTeamsObject = new TandemTeams(redShirtTeam, blueShirtTeam);
+        const tandemTeamsObject: TandemTeams = new TandemTeams(redShirtTeam, blueShirtTeam);
         expect(tandemTeamsObject).toBeInstanceOf(TandemTeams);
     });
 
@@ -14,7 +14,7 @@ describe("Tandem tests", () => {
         redShirtTeam = [5, 5, 3, 9, 2, 5];
         blueShirtTeam = [3, 6, 7, 2, 1];
         try {
-            const instance = new TandemTeams(redShirtTeam, blueShirtTeam);
+            const instance: TandemTeams = new TandemTeams(redShirtTeam, blueShirtTeam);
         } catch (e) {
             expect(e).toBe('The arrays must have the same length')
         }
@@ -24,7 +24,7 @@ describe("Tandem tests", () => {
         redShirtTeam = [5, 5, 3, 9.4, 2];
         blueShirtTeam = [3, 6, 7, 2, 1];
         try {
-            const instance = new TandemTeams(redShirtTeam, blueShirtTeam);
+            const instance: TandemTeams = new TandemTeams(redShirtTeam, blueShirtTeam);
         } catch (e) {
             expect(e).toBe('All values of the red shirt teams must be integer and positives')
         }
@@ -34,7 +34,7 @@ describe("Tandem tests", () => {
         redShirtTeam = [5, 5, 3, 9, 2];
         blueShirtTeam = [3, 6, 7, 2.2, 1];
         try {
-            const instance = new TandemTeams(redShirtTeam, blueShirtTeam);
+            const instance: TandemTeams = new TandemTeams(redShirtTeam, blueShirtTeam);
         } catch (e) {
             expect(e).toBe('All values of the blue shirt teams must be integer and positives')
         }
