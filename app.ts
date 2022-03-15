@@ -1,5 +1,5 @@
 import { TandemTeams } from './utilities/tandemTeams';
-
+console.clear();
 //we create the input values
 const redShirtTeam: number[] = [5, 5, 3, 9, 2];
 const blueShirtTeam: number[] = [3, 6, 7, 2, 1];
@@ -12,5 +12,10 @@ const tandemTeamsObject: TandemTeams = new TandemTeams(redShirtTeam, blueShirtTe
 const result: number = tandemTeamsObject.calculateExtremeValues();
 
 //print the result
+console.log("//--------------- Result -----------------");
 console.log(result);
+console.log("----------------- End -------------------");
+
+
+
 
