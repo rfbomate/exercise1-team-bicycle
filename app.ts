@@ -1,7 +1,7 @@
 import { TandemTeams } from './utilities/tandemTeams';
 console.clear();
 //we create the input values
-const redShirtTeam: number[] = [5, 5, 3, 9, 2];
+const redShirtTeam: number[] = [5, 5, 3, 9, 2, 8];
 const blueShirtTeam: number[] = [3, 6, 7, 2, 1];
 const fastest = true;
 try {
